@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Feed Factory - Quality Animal Feed Manufacturing</title>
+  <meta name="description" content="Premium animal feed factory: nutritional products for livestock, poultry, aquaculture. Quality-focused, reliable, experienced.">
+  <style>
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f7fafd;
+      color: #222;
+    }
+    header {
+      background: #256587;
+      padding: 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      padding: 16px 0;
+      margin: 0;
+      flex-wrap: wrap;
+    }
+    nav ul li {
+      margin: 0 20px;
+    }
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 1.07rem;
+      transition: color .2s;
+    }
+    nav ul li a:hover {
+      color: #ffca28;
+    }
+    section {
+      max-width: 1040px;
+      margin: 0 auto;
+      padding: 48px 24px;
+      border-bottom: 1px solid #e4e8ef;
+    }
+    #home {
+      text-align: center;
+      background-color: #e0f0ff;
+      border: none;
+      margin-top: 0;
+    }
+    #home h1 {
+      font-size: 2.3rem;
+      color: #204060;
+      margin-bottom: 16px;
+    }
+    #home p {
+      font-size: 1.2rem;
+      margin-bottom: 24px;
+    }
+    #home button {
+      background-color: #256587;
+      color: #fff;
+      border: none;
+      font-size: 1rem;
+      padding: 12px 34px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: 500;
+      letter-spacing: 1px;
+      transition: background .2s;
+    }
+    #home button:hover { background: #15415a; }
+    h2 {
+      font-size: 2rem;
+      color: #256587;
+      margin-top: 0;
+    }
+    /* Products */
+    .product-list {
+      display: flex;
+      gap: 32px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .product {
+      width: 250px;
+      background: #fff;
+      box-shadow: 0 2px 16px rgba(37,101,135,0.09);
+      border-radius: 8px;
+      padding: 24px 16px;
+      text-align: center;
+      margin-bottom: 30px;
+      transition: box-shadow .2s;
+    }
+    .product:hover { box-shadow: 0 4px 20px rgba(37,101,135,0.17);}
+    .product img {
+      width: 90px;
+      height: 90px;
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+    .product h3 { margin-bottom: 8px; font-size: 1.15rem; }
+    /* Gallery */
+    .gallery-grid {
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+      margin-top: 12px;
+    }
+    .gallery-grid img {
+      width: 220px;
+      height: 140px;
+      border-radius: 6px;
+      object-fit: cover;
+      box-shadow: 0 1px 6px rgba(80, 120, 140, 0.13);
+    }
+    /* Form & Contact */
+    form {
+      max-width: 400px;
+      margin-bottom: 16px;
+    }
+    form label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: 600;
+    }
+    form input, form textarea {
+      width: 100%;
+      margin-bottom: 16px;
+      padding: 9px 11px;
+      border: 1px solid #b6cbe2;
+      border-radius: 4px;
+      font-size: 1rem;
+      background: #f8fbfe;
+    }
+    form button[type="submit"] {
+      background-color: #256587;
+      color: #fff;
+      border: none;
+      padding: 11px 28px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 1rem;
+      letter-spacing: .5px;
+      font-weight: 500;
+      transition: background .2s;
+    }
+    form button[type="submit"]:hover { background: #15415a; }
+    .contact-details p { margin: 6px 0 2px 0; font-size: 1.05rem; }
+    /* Footer */
+    footer {
+      background: #204060;
+      color: #fff;
+      text-align: center;
+      padding: 24px 0 14px 0;
+      font-size: 1.08rem;
+    }
+    footer a { color: #fff38d;}
+    footer a:hover { color: #ffd974; }
+    /* Responsive Styles */
+    @media (max-width: 900px) {
+      .product-list, .gallery-grid { flex-direction: column; align-items: center; }
+      .product, .gallery-grid img { width: 90vw; max-width: 360px;}
+    }
+    @media (max-width: 600px) {
+      nav ul { flex-direction: column; gap: 10px; }
+      section { padding: 36px 10px;}
+      h2 { font-size: 1.24rem;}
+      #home { padding: 32px 5vw;}
+    }
+  </style>
+</head>
+<body>
+<header>
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#products">Products</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#quality">Quality</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+<section id="home">
+  <h1>Welcome to Cattle Feed Manufacturer</h1>
+  <h1>Garg Industries</h1>
+  <p>Delivering premium animal feed for healthier livestock and successful farming.</p>
+  <button onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">Learn More</button>
+</section>
+
+<section id="about">
+  <h2>About Us</h2>
+  <p>Feed Factory is a leader in animal feed production, committed to quality, innovation, and customer satisfaction. Our state-of-the-art facility produces a wide range of high-nutrition feed products for livestock, poultry, and aquaculture.</p>
+  <ul>
+    <li>Established: 2015</li>
+    <li>Location: Bypass Road, Bathinda, Punjab</li>
+    <li>Mission: Supporting farmers with reliable and nutritious feed.</li>
+    <li>Vision: Sustainable and innovative feed solutions.</li>
+  </ul>
+</section>
+
+<section id="products">
+  <h2>Our Products</h2>
+  <div class="product-list">
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?fit=facearea&w=300&q=80" alt="Cattle Feed">
+      <h3>Cattle Feed</h3>
+      <p>High-protein, energy-rich cattle feed for optimum growth and milk yield.</p>
+    </div>
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?fit=facearea&w=300&q=80" alt="Poultry Feed">
+      <h3>Poultry Feed</h3>
+      <p>Balanced poultry feed to support egg production and healthy growth.</p>
+    </div>
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?fit=facearea&w=300&q=80" alt="Fish Feed">
+      <h3>Fish Feed</h3>
+      <p>Nutrient-dense fish feed for fast, healthy aquaculture development.</p>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <h2>Our Services</h2>
+  <ul>
+    <li>Custom feed formulation</li>
+    <li>Bulk delivery and logistics</li>
+    <li>On-site feed consulting</li>
+    <li>Quality testing and reporting</li>
+  </ul>
+</section>
+
+<section id="quality">
+  <h2>Quality Assurance</h2>
+  <p>We maintain international quality standards to ensure every batch is safe, nutritious, and consistent.</p>
+  <ul>
+    <li>ISO-certified manufacturing</li>
+    <li>Regular laboratory testing</li>
+    <li>Traceable sourcing of raw materials</li>
+    <li>Safe storage and packaging</li>
+  </ul>
+</section>
+
+<section id="gallery">
+  <h2>Gallery</h2>
+  <div class="gallery-grid">
+    <img src="https://images.unsplash.com/photo-1465101162946-4377e57745c3?fit=facearea&w=400&q=80" alt="Production Line">
+    <img src="https://images.unsplash.com/photo-1503389152951-9c3a9b4b8a2c?fit=facearea&w=400&q=80" alt="Quality Testing Lab">
+    <img src="https://images.unsplash.com/photo-1457296898342-cdd24585d095?fit=facearea&w=400&q=80" alt="Feed Packaging">
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact Us</h2>
+  <form onsubmit="sendMsg(event)">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="message">How can we help you?</label>
+    <textarea id="message" name="message" rows="4" required></textarea>
+
+    <button type="submit">Send Message</button>
+    <p id="successMsg" style="color:green; display:none; margin-top:8px;">Message sent! Thank you for contacting us.</p>
+  </form>
+  <div class="contact-details">
+    <p><strong>Phone:</strong> +91 9888840321</p>
+    <p><strong>Email:</strong> manokamnacattlefeed@gmail.com</p>
+    <p><strong>Address:</strong> Bypass Road, Bathinda, Punjab, India</p>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 Feed Factory. All Rights Reserved.</p>
+  <p>Follow us:
+    <a href="#">Facebook</a> | <a href="#">LinkedIn</a>
+  </p>
+</footer>
+
+<script>
+  // Fake contact form handler for demonstration
+  function sendMsg(e) {
+    e.preventDefault();
+    document.getElementById('successMsg').style.display = 'block';
+    setTimeout(function(){ document.getElementById('successMsg').style.display = 'none'; }, 4000);
+    e.target.reset();
+  }
+</script>
+</body>
+</html>
